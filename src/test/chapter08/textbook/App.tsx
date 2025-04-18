@@ -20,6 +20,7 @@ const App1 = () => {
           name={user.name}
           age={user.age}
           personalColor={user.personalColor}
+          hobbies={user.hobbies}
         />
       ))}
     </div>
