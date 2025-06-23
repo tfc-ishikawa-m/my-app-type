@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 const Page0103 = () => {
-  const [text, setText] = useState<string>("");
-  const onChangeText = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const [text, setText] = useState("");
+  // const [text, setText] = useState<string[]>([]);
+
+  const onChangeText = (event: ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
   };
   return (
