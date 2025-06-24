@@ -10,7 +10,7 @@ const Page0301 = () => {
   };
   return (
     <div>
-      <Child />
+      <Child name={userInf.name} age={userInf.age} />
     </div>
   );
 };

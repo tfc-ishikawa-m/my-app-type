@@ -1,8 +1,6 @@
-type User = {
-  name: string;
-  age: number;
-};
-const Child = ({ name, age }: User) => {
+import { User } from "./page";
+
+const Child = ({ name, age = "Not provided" }: User) => {
   return (
     <div>
       <p>Name:{name}</p>

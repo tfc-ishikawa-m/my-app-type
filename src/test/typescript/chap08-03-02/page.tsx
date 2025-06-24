@@ -1,5 +1,13 @@
+import Child from "./Child";
+
+type fruitsList = string[];
 const Page0302 = () => {
-  return <div>Page0302</div>;
+  const fruits: fruitsList = ["Apple", "banana", "orange"];
+  return (
+    <div>
+      <Child fruits={fruits} />
+    </div>
+  );
 };
 
 export default Page0302;

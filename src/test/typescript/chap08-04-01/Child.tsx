@@ -1,7 +1,13 @@
-import React from "react";
+import { User } from "./type";
 
-const Child = () => {
-  return <div>Child</div>;
+const Child = ({ id, name, email }: User) => {
+  return (
+    <div>
+      <p>{id}</p>
+      <p>{name}</p>
+      <p>{email}</p>
+    </div>
+  );
 };
 
 export default Child;

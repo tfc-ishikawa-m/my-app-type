@@ -22,6 +22,9 @@ import Page0302 from "./test/typescript/chap08-03-02/page";
 import Page0303 from "./test/typescript/chap08-03-03/page";
 import Page0401 from "./test/typescript/chap08-04-01/page";
 import Page0402 from "./test/typescript/chap08-04-02/page";
+import Page0403 from "./test/typescript/chap08-04-03/page";
+import Page0601 from "./test/typescript/chap08-06-01/page";
+import Page0602 from "./test/typescript/chap08-06-02/page";
 // Homeコンポーネント
 function Home() {
   return <h1>Welcome to the Home Page</h1>;
@@ -73,6 +76,9 @@ export default function AppRouter() {
         <Route path="/page0303" element={<Page0303 />} />
         <Route path="/page0401" element={<Page0401 />} />
         <Route path="/page0402" element={<Page0402 />} />
+        <Route path="/page0403" element={<Page0403 />} />
+        <Route path="/page0601" element={<Page0601 />} />
+        <Route path="/page0602" element={<Page0602 />} />
       </Routes>
     </Router>
   );
