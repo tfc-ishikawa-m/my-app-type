@@ -1,5 +1,7 @@
-import { User } from "./page";
-
+type User = {
+  name: string;
+  age?: number | "Not provided";
+};
 const Child = ({ name, age = "Not provided" }: User) => {
   return (
     <div>

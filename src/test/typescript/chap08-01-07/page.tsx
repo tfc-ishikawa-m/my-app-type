@@ -1,12 +1,7 @@
 import Child from "./Child";
 
-type inputInf<T extends string, K extends number> = {
-  text: T;
-  num: K;
-};
-
 const Page0107 = () => {
-  const input: inputInf<string, number> = {
+  const input = {
     text: "Hello TypeScript",
     num: 10,
   };

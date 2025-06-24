@@ -1,8 +1,7 @@
 import Child from "./Child";
-import { User } from "./type";
 
 const Page0401 = () => {
-  const userInf: User = {
+  const userInf = {
     id: 3,
     name: "Yumi",
     email: "yumi@gmail.com",

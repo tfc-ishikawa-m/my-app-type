@@ -1,6 +1,4 @@
-type FontSize = {
-  size: string;
-};
+type FontSize = { size: "small" | "medium" | "large" };
 const Child = ({ size }: FontSize) => {
   return (
     <div>

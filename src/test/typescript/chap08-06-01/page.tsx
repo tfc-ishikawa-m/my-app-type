@@ -1,14 +1,10 @@
 import Child from "./Child";
 
-export type User = {
-  name: string;
-  age?: number | "Not provided";
-};
 const Page0601 = () => {
-  const user1: User = {
+  const user1 = {
     name: "mami",
   };
-  const user2: User = {
+  const user2 = {
     name: "mana",
     age: 16,
   };

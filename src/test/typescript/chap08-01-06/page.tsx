@@ -1,15 +1,10 @@
 import Child from "./Child";
-type FruitsList<T extends [string, string, string]> = {
-  val: T;
-};
 
 const Page0106 = () => {
-  const friuts: FruitsList<[string, string, string]> = {
-    val: ["Apple", "Banana", "Cherry"],
-  };
+  const friuts = ["Apple", "Banana", "Cherry"];
   return (
     <div>
-      <Child fruit={friuts.val} />
+      <Child fruit={friuts} />
     </div>
   );
 };

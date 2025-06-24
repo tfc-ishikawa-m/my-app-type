@@ -1,17 +1,20 @@
 import Child from "./Child";
 
-type Text = {
-  btnName: string;
-  alertText: string;
-};
 const Page0303 = () => {
-  const showText: Text = {
+  const showText = {
     btnName: "おしてね～",
     alertText: "アラートだよ～",
   };
+  const onClickButton = (alertText: string): void => {
+    alert(alertText);
+  };
   return (
     <div>
-      <Child btnName={showText.btnName} alertText={showText.alertText} />
+      <Child
+        btnName={showText.btnName}
+        alertText={showText.alertText}
+        onClickButton={onClickButton}
+      />
     </div>
   );
 };

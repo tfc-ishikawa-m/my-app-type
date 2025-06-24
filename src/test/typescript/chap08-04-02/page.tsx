@@ -1,3 +1,4 @@
+import { Value } from "sass";
 import Child from "./Child";
 import { Product } from "./types";
 
@@ -9,7 +10,9 @@ const Page0402 = () => {
   ];
   return (
     <div>
-      <Child products={productInf} />
+      {productInf.map((item, index) => (
+        <Child key={index} id={item.id} name={item.name} price={item.price} />
+      ))}
     </div>
   );
 };

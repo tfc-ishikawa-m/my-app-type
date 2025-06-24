@@ -1,11 +1,10 @@
 import Child from "./Child";
 
-type FontSize = { size: "small" | "medium" | "large" };
 const Page0105 = () => {
-  const font: FontSize = { size: "large" };
+  const font = "large";
   return (
     <div>
-      <Child size={font.size} />
+      <Child size={font} />
     </div>
   );
 };

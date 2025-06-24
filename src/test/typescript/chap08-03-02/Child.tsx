@@ -3,7 +3,7 @@ const Child = ({ fruits }: fruitsList) => {
   return (
     <div>
       <ul>
-        {fruits.map((value: string, index: number) => {
+        {fruits.map((value, index) => {
           return <li key={index}>{value}</li>;
         })}
       </ul>

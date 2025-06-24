@@ -1,10 +1,7 @@
 import Child from "./Child";
-type User = {
-  name: string;
-  age: number;
-};
+
 const Page0301 = () => {
-  const userInf: User = {
+  const userInf = {
     name: "Momo",
     age: 20,
   };

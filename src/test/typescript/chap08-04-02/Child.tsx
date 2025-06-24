@@ -1,18 +1,11 @@
 import { Product } from "./types";
-type productList = {
-  products: Product[];
-};
 
-const Child = ({ products }: productList) => {
+const Child = ({ id, name, price }: Product) => {
   return (
     <div>
-      {products.map((velue, index) => (
-        <div key={index}>
-          <p>ProductID:{velue.id}</p>
-          <p>ProductName:{velue.name}</p>
-          <p>ProductPrice:{velue.price}</p>
-        </div>
-      ))}
+      <p>ProductID:{id}</p>
+      <p>ProductName:{name}</p>
+      <p>ProductPrice:{price}</p>
     </div>
   );
 };

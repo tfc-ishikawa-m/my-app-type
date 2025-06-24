@@ -1,8 +1,8 @@
-type inputItem<T extends string, K extends number> = {
+type inputItem<T extends string | number> = {
   text: T;
-  num: K;
+  num: T;
 };
-const Child = ({ text, num }: inputItem<string, number>) => {
+const Child = ({ text, num }: inputItem<string | number>) => {
   return (
     <div>
       <p>{text}</p>

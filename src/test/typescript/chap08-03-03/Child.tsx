@@ -1,11 +1,12 @@
 type Text = {
   btnName: string;
   alertText: string;
+  onClickButton: (alertText: string) => void;
 };
-const Child = ({ btnName, alertText }: Text) => {
+const Child = ({ btnName, alertText, onClickButton }: Text) => {
   return (
     <div>
-      <button onClick={() => alert(alertText)}>{btnName}</button>
+      <button onClick={() => onClickButton(alertText)}>{btnName}</button>
     </div>
   );
 };

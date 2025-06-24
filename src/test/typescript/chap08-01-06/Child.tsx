@@ -1,7 +1,7 @@
-type FruitsList = {
-  fruit: [string, string, string];
+type FruitsList<T extends string> = {
+  fruit: T[];
 };
-const Child = ({ fruit }: FruitsList) => {
+const Child = <T extends string>({ fruit }: FruitsList<T>) => {
   return (
     <div>
       <ul>
